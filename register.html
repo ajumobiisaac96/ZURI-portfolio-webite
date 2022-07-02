@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    padding-right: 3%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 300px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    padding-left: 350px;
+    
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+#btn1 {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #378de5 3%, #48789b 100%);
+    border-radius: 30px;
+    border: 1px solid #5e97d1;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px #528ecc;
+}
+#btn2 {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+    border-radius: 30px;
+    border: 1px solid #cbcbcb;
+    cursor: pointer;
+    color: #5e97d1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px #cbcbcb;
+}
+.btn:hover {
+    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+    /*---------------------------------------*/
+/* Font */
+/*---------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/*---------------------------------------*/
+/* Register Form */
+/*---------------------------------------*/
+body {
+  background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+}
+
+.signup-form {
+  font-family: "Roboto", sans-serif;
+  width:650px;
+  margin:30px auto;
+  background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  border-radius: 10px;
+}
+
+/*---------------------------------------*/
+/* Form Header */
+/*---------------------------------------*/
+.form-header  {
+  background-color: #EFF0F1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  text-align:center;
+  color:#666;
+  padding:20px 0;
+  border-bottom:1px solid #cccccc;
+}
+
+/*---------------------------------------*/
+/* Form Body */
+/*---------------------------------------*/
+.form-body {
+  padding:10px 40px;
+  color:#666;
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+.form-body .label-title {
+  color:#1BBA93;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-body .form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+
+
+.horizontal-group .left{
+  float:left;
+  width:49%;
+}
+
+.horizontal-group .right{
+  float:right;
+  width:49%;
+}
+
+input[type="file"] {
+  outline: none;
+  cursor:pointer;
+  font-size: 17px;
+}
+
+#range-label {
+  width:15%;
+  padding:5px;
+  background-color: #1BBA93;
+  color:white;
+  border-radius: 5px;
+  font-size: 17px;
+  position: relative;
+  top:-8px;
+}
+
+
+::-webkit-input-placeholder  {
+  color:#d9d9d9;
+}
+
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+.signup-form .form-footer  {
+  background-color: #EFF0F1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:10px 40px;
+  text-align: right;
+  border-top: 1px solid #cccccc;
+  clear:both;
+}
+
+.form-footer span {
+  float:left;
+  margin-top: 10px;
+  color:#999;  
+  font-style: italic;
+  font-weight: thin;
+}
+
+.btn {
+   display:inline-block;
+   padding:10px 20px;
+   background-color: #1BBA93;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#bcf5e7;
+   cursor:pointer;
+}
+
+.btn:hover {
+  background-color: #169c7b;
+  color:white;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-Color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-Align: center
+  }
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+          <img src="images/zuri.png" class="logo">
+          <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="Index.html">skills</a></li>
+            </ul>
+        </nav>
+        <a href="login.html">
+        <button class="btn" id="btn1" href="login.html">Log In</button>
+        </a>
+        <a href="register.html">
+         <button class="btn" id="btn2" href="register.html">Sign Up</button>   
+        </a>
+        <a href="contact.html">
+            <button class="btn" id="btn2" href="contact.html">contact</button>   
+        </a>
+      </div>
+    <form class="signup-form" action="/register" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>Create Account</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+        </div>
+
+          <!-- phone number -->
+          <div class="form-group">
+            <label for="email" class="label-title">Phone Number</label>
+            <input type="email" id="email" class="form-input" placeholder="+234-000-0000-000" required="required">
+          </div>
+
+        <!-- Passwrod and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again" required="required">
+          </div>
+        </div>
+      
+         <!-- country and state/province -->
+         <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Country *</label>
+            <input type="text" id="password" class="form-input" placeholder="enter your country" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">State/Province *</label>
+            <input type="text" class="form-input" id="confirm-password" placeholder="enter your state" required="required">
+          </div>
+        </div>
+    
+
+        <!-- gender and age -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender *</label>
+            <select class="form-input" id="level" >
+              <option value="B">Male</option>
+              <option value="I">Female</option>
+            </select>
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Age *</label>
+            <input type="text" class="form-input" id="confirm-password" placeholder="enter your password again" required="required">
+          </div>
+        </div>
+
+      <!-- form-footer -->
+      <div class="form-footer">
+        <span>* required</span>
+        <button type="submit" class="btn">Create</button>
+      </div>
+
+    </form>
+
+    <!-- Script for range input label -->
+    <script>
+      var rangeLabel = document.getElementById("range-label");
+      var experience = document.getElementById("experience");
+
+      function change() {
+      rangeLabel.innerText = experience.value + "K";
+      }
+    </script>
+
+  </body>
+<footer>&copy; Copyright 2022 HTML</footer>
+</html>
